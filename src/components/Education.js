@@ -7,7 +7,9 @@ import grietLogo from "../assets/griet.png";
 const Education = () => {
   return (
     <div id="education">
-      <h2 className="education-title">Education</h2>
+      <h2 className="education-title" align="center">
+        Education
+      </h2>
       <div className="education-container">
         <div className="education-item">
           <img
