@@ -20,7 +20,7 @@ const Education = () => {
           <div className="education-details">
             <h3>Binghamton University</h3>
             <p>Master of Science in Computer Science</p>
-            <p>Expected Graduation: Mar 2024</p>
+            <p>Graduated: Mar 2024</p>
           </div>
         </div>
         <div className="education-item">

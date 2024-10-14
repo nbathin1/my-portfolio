@@ -10,13 +10,14 @@ const Header = () => {
 
   return (
     <header>
-      <div className="logo">My Portfolio</div>
+      <div className="logo" align="left">
+        Nikhil Bathini
+      </div>
       <nav align="right">
         <a onClick={() => handleScroll("education")}>Education</a>
-        <a onClick={() => handleScroll("Experience")}>Experience</a>
+        <a onClick={() => handleScroll("experience-section")}>Experience</a>
         <a onClick={() => handleScroll("Projects")}>Projects</a>
         <a onClick={() => handleScroll("skills")}>Skills</a>
-        <a onClick={() => handleScroll("Contact")}>Contact</a>
       </nav>
     </header>
   );

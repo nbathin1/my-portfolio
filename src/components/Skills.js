@@ -15,7 +15,7 @@ import mysql from "../assets/mysql.svg";
 const Skills = () => {
   return (
     <div id="skills">
-      <h2 align="center">My Skills</h2>
+      <h1 align="center">My Skills</h1>
       <div className="skills-container">
         {/* Languages */}
         <div className="skill-card">

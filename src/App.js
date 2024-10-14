@@ -3,7 +3,9 @@ import Header from "./components/Header";
 import Education from "./components/Education";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import "./App.css"; // Include your main CSS file if you have one
+import Experience from "./components/Experience";
+import Project from "./components/Project";
+import "./App.css";
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <Header />
       <About />
       <Education />
+      <Experience />
+      <Project />
       <Skills />
     </div>
   );
