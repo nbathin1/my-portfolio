@@ -58,7 +58,7 @@ const About = () => {
               &times;
             </span>
             <iframe
-              src="https://nbathin1.github.io/my-portfolio/public/Nikhil_Bathini.pdf"
+              src="../assets/Nikhil_Bathini.pdf"
               width="100%"
               height="500px"
               title="Resume PDF"
