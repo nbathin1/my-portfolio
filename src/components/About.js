@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./About.css";
 import profilePic from "../assets/nikhil1.jpg";
-import resume from "../assests/Nikhil_Bathini.pdf";
+import resume from "../assets/Nikhil_Bathini.pdf";
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
