@@ -1,9 +1,12 @@
-// src/components/About.js
-import React from "react";
+import React, { useState } from "react";
 import "./About.css";
-import profilePic from "../assets/nikhil1.jpg"; // Replace with the path to your profile picture
+import profilePic from "../assets/nikhil1.jpg";
 
 const About = () => {
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
+
   return (
     <div className="about-container">
       <div className="about-content">
@@ -32,14 +35,9 @@ const About = () => {
             </p>
           </div>
           <div className="buttons">
-            <a
-              href="/Nikhil_Bathini.pdf"
-              className="button resume-button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <button onClick={openModal} className="button resume-button">
               View Resume
-            </a>
+            </button>
             <a
               href="https://www.linkedin.com/in/nikhilbathini18"
               className="button connect-button"
@@ -51,6 +49,23 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal Structure */}
+      {showModal && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            <iframe
+              src="https://nbathin1.github.io/my-portfolio/public/Nikhil_Bathini.pdf"
+              width="100%"
+              height="500px"
+              title="Resume PDF"
+            ></iframe>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
