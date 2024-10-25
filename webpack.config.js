@@ -17,16 +17,26 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|webp)$/, // Add this rule for image files
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[path][name].[ext]", // Keep the original path and file name
+            },
+          },
+        ],
+      },
     ],
   },
   resolve: {
     extensions: [".js", ".jsx"],
   },
   devtool: "source-map",
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    compress: true,
-    port: 9000,
-  },
   plugins: [new CleanWebpackPlugin()],
 };
