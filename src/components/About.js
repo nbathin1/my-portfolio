@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./About.css";
 import profilePic from "../assets/nikhil1.jpg";
+import resume from "../assests/Nikhil_Bathini.pdf";
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -58,7 +59,7 @@ const About = () => {
               &times;
             </span>
             <iframe
-              src="../assets/Nikhil_Bathini.pdf"
+              src={resume}
               width="100%"
               height="500px"
               title="Resume PDF"
