@@ -22,16 +22,30 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install Dependencies
+    - name: Cache node modules
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install Dependencies and Audit
       run: |
         npm install
-        npm install --save-dev webpack-cli  # Ensure webpack-cli is installed
+        npm audit fix
 
     - name: Build
       run: |
         npx webpack
 
-    - name: Audit
+    - name: Run Tests
       run: |
-        npm audit fix
+        npm test
+
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: webpack-output
+        path: dist/
 
