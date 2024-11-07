@@ -16,7 +16,7 @@ const Header = () => {
       <nav align="right">
         <a onClick={() => handleScroll("education")}>Education</a>
         <a onClick={() => handleScroll("experience-section")}>Experience</a>
-        <a onClick={() => handleScroll("Projects")}>Projects</a>
+        <a onClick={() => handleScroll("Project")}>Projects</a>
         <a onClick={() => handleScroll("skills")}>Skills</a>
       </nav>
     </header>

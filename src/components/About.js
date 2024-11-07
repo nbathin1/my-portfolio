@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./About.css";
 import profilePic from "../assets/nikhil1.jpg";
+import resume from "../assets/Nikhil_Bathini.pdf";
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -16,7 +17,7 @@ const About = () => {
           <p>
             I'm a proud Bearcat! I'm an experienced software developer currently
             pursuing opportunities in Full Stack Web Development and Machine
-            Learning.
+            Learning......
           </p>
           <p>
             I have a background in Computer Science, with hands-on experience in
@@ -46,6 +47,14 @@ const About = () => {
             >
               Let’s Connect
             </a>
+            <a
+              href="https://github.com/nbathin1"
+              className="button connect-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              My Github projects
+            </a>
           </div>
         </div>
       </div>
@@ -58,7 +67,7 @@ const About = () => {
               &times;
             </span>
             <iframe
-              src="../assets/Nikhil_Bathini.pdf"
+              src={resume}
               width="100%"
               height="500px"
               title="Resume PDF"
