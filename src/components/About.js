@@ -17,7 +17,7 @@ const About = () => {
           <p>
             I'm a proud Bearcat! I'm an experienced software developer currently
             pursuing opportunities in Full Stack Web Development and Machine
-            Learning......
+            Learning....
           </p>
           <p>
             I have a background in Computer Science, with hands-on experience in
