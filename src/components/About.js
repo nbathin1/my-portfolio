@@ -36,9 +36,6 @@ const About = () => {
             </p>
           </div>
           <div className="buttons">
-            <button onClick={openModal} className="button resume-button">
-              View Resume
-            </button>
             <a
               href="https://www.linkedin.com/in/nikhilbathini18"
               className="button connect-button"
