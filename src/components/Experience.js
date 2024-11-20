@@ -52,25 +52,29 @@ const Experience = () => {
       {/* Junior Web Developer */}
       <div className="experience-card">
         <div className="experience-header">
-          <h3>Junior Web Developer</h3>
+          <h3>Associate Database Engineer</h3>
           <span className="experience-date">Apr 2019 - Dec 2019</span>
         </div>
-        <h4>Vaishnavi Pvt Limited</h4>
+        <h4>Softech</h4>
         <ul>
           <li>
-            Developed and maintained responsive web applications using React and
-            JavaScript.
+            Developed an Employee Data Bank system to manage and streamline
+            employee data, designed to store credentials and historical details,
+            with automatic updates from the admin portal for new hires.
           </li>
           <li>
-            Transformed UI/UX designs into functional web pages using CSS and
-            Bootstrap.
+            Designed and implemented the backend architecture using Django and
+            MySQL, creating a robust, efficient, and scalable database framework
+            for secure data management.
           </li>
           <li>
-            Integrated RESTful APIs for real-time dynamic content rendering.
+            Enabled HR teams to perform dynamic search and sorting based on
+            employee performance metrics, enhancing data accessibility and user
+            productivity.
           </li>
           <li>
-            Collaborated in Git version control, pull requests, and code
-            reviews.
+            Focused on database efficiency and operability, contributing to a
+            sophisticated, user-friendly backend system.
           </li>
         </ul>
       </div>
